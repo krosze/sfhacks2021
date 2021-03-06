@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="../css/form.css"> 
+        <script type="text/javascript" src="../js/formValidation.js"></script>
+        <title>Registration</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Registration Form</h1>
+            </header>
+            <form class="form-grid-reg">
+                <label class="center" for="username">Username</label>
+                <input id="username" type="text" placeholder="Username" required>
+                <label class="center" for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" required>
+                <label class="center" for="passwd">Password</label>
+                <input id="passwd" type="passwd" placeholder="Password" required>
+                <label class="center" for="cpasswd">Confirm Password</label>
+                <input id="cpasswd" type="cpasswd" placeholder="Confirm Password" required>
+                <div>
+                    <input type="checkbox" required/>
+                    <label>I am 13 years of age or older</label>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" required/>
+                    <label>I accept</label>
+                    <a href="#">Terms and Conditions</a>
+                    <label>and</label>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit">Cancel</button>
+            </form>
+        </div> 
+    </body>
+</html>
+
