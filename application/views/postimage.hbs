@@ -1,0 +1,18 @@
+<div class="form-container">
+    <header class="form-header"> 
+        <h1>Upload your image!</h1>
+    </header>
+    <form id="post-image" class="form-grid form-grid-postimage" method="POST" enctype="multipart/form-data" action='/posts/createPost'>
+        <input id="post-title" class="text-input post-input-title" type="text" placeholder="Post title" name="title" required />
+        <input id="post-desc" class="text-input post-input-desc" type="text" placeholder="Post description here..." name="desc" required />
+        <input id="img-select" class="post-input-image" type="file" name="uploadImage" required />
+    
+        <label class="checkbox aup" >
+            <input type="checkbox" required/>
+            <a href="#" id="link">Acceptable Use Policy</a>
+        </label>
+
+        <button id="submit" type="submit" class="btn btn-success login-submit">Submit</button>
+        <button id="cancel" type="reset" class="btn btn-danger login-reset">Cancel</button>
+    </form>
+</div>

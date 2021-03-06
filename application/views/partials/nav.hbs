@@ -1,0 +1,18 @@
+<nav id="nav-bar">
+    <a href="/" id="homebutton" class="nav-items anchor-buttons">
+    <img src="https://img.icons8.com/material-rounded/24/ffffff/home.png" alt="HOME"/>
+    </a>
+
+    <input id="search-text" name="search-text" type="text">
+    <i id="search-button" class="nav-items anchor-buttons">
+        <img src="https://img.icons8.com/android/24/ffffff/detective.png"/>
+    </i>
+
+    <a href="/postimage" id="post-button" class="nav-items anchor-buttons">Post</a>
+
+    {{#if logged}}
+    <a id="logout-button" class="login-button nav-items anchor-buttons">Log Out</a>
+    {{else}}
+    <a href="/login" id="login-button" class="login-button nav-items anchor-buttons">Log in</a>
+    {{/if}}
+</nav>

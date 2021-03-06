@@ -1,0 +1,22 @@
+<div class="form-container">
+    <header class="form-header">
+        <h1>Join our growing community!</h1>
+    </header>
+    <form class="form-grid form-grid-reg" method="POST" enctype="application/x-www-form-urlencoded" action="/users/register">
+        <input id="username" class="text-input reg-input-uname" type="text" placeholder="Username" name="username" required>
+        <input id="email" class="text-input reg-input-email" type="email" placeholder="Email" name="email" required>
+        <input id="passwd" class="text-input reg-input-passwd" type="password" placeholder="Password" name="password" required>
+        <input id="cpasswd" class="text-input reg-input-cpasswd" type="password" placeholder="Confirm Password" name="cpassword" required>
+
+        <label id="lbloac" class="checkbox">
+            <input type="checkbox" id="aoc link"> I am 13 years of age or older
+        </label>
+
+        <label id="lbltos-pr" class="checkbox">
+            <input type="checkbox" id="tos-pr link"> I accept <a href="#" id="link" >Terms of Service</a> and <a href="" id="link">Privacy Rules.</a>
+        </label>
+
+        <button id="submit" type="submit" class="btn btn-success login-submit">Submit</button>
+        <button id="cancel" type="reset" class="btn btn-danger login-reset">Cancel</button>
+    </form>
+</div>
