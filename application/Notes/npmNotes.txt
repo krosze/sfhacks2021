@@ -1,0 +1,190 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\margo\Documents\GitHub\sfhacks2021> npm install
+
+up to date in 602ms
+
+found 0 vulnerabilities
+PS C:\Users\margo\Documents\GitHub\sfhacks2021> cd application
+PS C:\Users\margo\Documents\GitHub\sfhacks2021\application> npm init --yes
+Wrote to C:\Users\margo\Documents\GitHub\sfhacks2021\application\package.json:
+
+  "name": "application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+}
+
+
+PS C:\Users\margo\Documents\GitHub\sfhacks2021\application> npm install express
+added 50 packages, and audited 50 packages in 4s
+
+found 0 vulnerabilities
+PS C:\Users\margo\Documents\GitHub\sfhacks2021\application> npm install morgan
+
+added 4 packages, and audited 54 packages in 1s
+
+PS C:\Users\margo\Documents\GitHub\sfhacks2021\application> npm install debug
+up to date, audited 54 packages in 1s
+
+found 0 vulnerabilities
+PS C:\Users\margo\Documents\GitHub\sfhacks2021\application> npm install firebase
+
+added 87 packages, and audited 141 packages in 13s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\margo\Documents\GitHub\sfhacks2021\application> firebase login
+Already logged in as margolisdaniela@gmail.com
+PS C:\Users\margo\Documents\GitHub\sfhacks2021\application> firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\margo\Documents\GitHub\sfhacks2021\application
+
+? Are you ready to proceed? Yes
+? Which Firebase CLI features do you want to set up for this folder? Press Space to select features, then Enter to confirm your choices. (Press <space> to select, <a> to toggle all, <i> to invert selection)Database: Configure Firebase Realtime Database and deploy rules, Firestore: Deploy rules and create indexes for Firestore, Functions: Configure and deploy Cloud Functions, Hosting: Configure and deploy Firebase Hosting sites, Storage: Deploy Cloud Storage security rules, Emulators: Set up local emulators for Firebase features, Remote Config: Get, deploy, and rollback configurations for Remote Config
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: whatsupbody-bc8d6 (WhatsUpBody)
+i  Using project whatsupbody-bc8d6 (WhatsUpBody)
+
+=== Database Setup
+i  database: ensuring required API firebasedatabase.googleapis.com is enabled...
++  database: required API firebasedatabase.googleapis.com is enabled
+
+
+Firebase Realtime Database Security Rules allow you to define how your data should be
+structured and when your data can be read from and written to.
+
+? What file should be used for Realtime Database Security Rules? database.rules.json
++  Database Rules for whatsupbody-bc8d6-default-rtdb have been written to database.rules.json.
+Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+firebase deploy.
+
+=== Firestore Setup
+
+Firestore Security Rules allow you to define how and when to allow
+requests. You can keep these rules in your project directory
+and publish them with firebase deploy.
+
+? What file should be used for Firestore Rules? firestore.rules
+
+Firestore indexes allow you to perform complex queries while
+maintaining performance that scales with the size of the result
+set. You can keep index definitions in your project directory
+and publish them with firebase deploy.
+
+? What file should be used for Firestore indexes? firestore.indexes.json
+
+=== Functions Setup
+
+A functions directory will be created in your project with a Node.js
+package pre-configured. Functions can be deployed with firebase deploy.
+
+? What language would you like to use to write Cloud Functions? JavaScript
+? Do you want to use ESLint to catch probable bugs and enforce style? Yes
++  Wrote functions/package.json
++  Wrote functions/.eslintrc.js
++  Wrote functions/index.js
++  Wrote functions/.gitignore
+? Do you want to install dependencies with npm now? Yes
+
+added 300 packages, and audited 300 packages in 17s
+
+20 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? public
+? Configure as a single-page app (rewrite all urls to /index.html)? No
+? Set up automatic builds and deploys with GitHub? Yes
++  Wrote public/404.html
++  Wrote public/index.html
+
+i  Detected a .git folder at C:\Users\margo\Documents\GitHub\sfhacks2021
+i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store.
+
+Visit this URL on this device to log in:
+https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=978931460&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+
+Waiting for authentication...
+
++  Success! Logged into GitHub as krosze
+
+? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) krosze/sfhacks2021
+
++  Created service account github-action-345029780 with Firebase Hosting admin permissions.
++  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_WHATSUPBODY_BC8D6.
+i  You can manage your secrets at https://github.com/krosze/sfhacks2021/settings/secrets.
+
+? Set up the workflow to run a build script before every deploy? Yes
+? What script should be run before every deploy? npm run build
+
++  Created workflow file C:\Users\margo\Documents\GitHub\sfhacks2021\.github/workflows/firebase-hosting-pull-request.yml
+? Set up automatic deployment to your site's live channel when a PR is merged? Yes
+? What is the name of the GitHub branch associated with your site's live channel? main
+
++  Created workflow file C:\Users\margo\Documents\GitHub\sfhacks2021\.github/workflows/firebase-hosting-merge.yml
+
+i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App:
+https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+i  Action required: Push any new workflow file(s) to your repo
+
+=== Storage Setup
+
+Firebase Storage Security Rules allow you to define how and when to allow
+uploads and downloads. You can keep these rules in your project directory
+and publish them with firebase deploy.
+
+? What file should be used for Storage Rules? storage.rules
+
+=== Emulators Setup
+? Which Firebase emulators do you want to set up? Press Space to select emulators, then Enter to confirm your choices. (Press <space> to select, <a> to toggle all, <i> to invert 
+selection)Authentication Emulator, Functions Emulator, Firestore Emulator, Database Emulator, Hosting Emulator, Pub/Sub Emulator
+? Which port do you want to use for the auth emulator? 9099        
+? Which port do you want to use for the functions emulator? 5001   
+? Which port do you want to use for the firestore emulator? 8080  
+? Which port do you want to use for the database emulator? 9000  
+? Which port do you want to use for the hosting emulator? 5000
+? Which port do you want to use for the pubsub emulator? 8085
+? Would you like to enable the Emulator UI? Yes
+? Which port do you want to use for the Emulator UI (leave empty to use any available port)?
+? Would you like to download the emulators now? Yes
+
+=== Remoteconfig Setup
+? What file should be used for your Remote Config template? remoteconfig.template.json
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+
++  Firebase initialization complete!
+PS C:\Users\margo\Documents\GitHub\sfhacks2021\application>
